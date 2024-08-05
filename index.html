@@ -112,7 +112,7 @@
     </header>
     
     <main>
-        <section id="apuesta" onsubmit="event.preventDefault(); submitForm();">
+        <section id="apuesta"">
             <h2>Hacer una Apuesta</h2>
             <form id="apuestaForm">
                 <label for="nombre">Tu Nombre:</label>
@@ -126,7 +126,7 @@
                     <label for="jugador2">Jugador 2</label>
                 </fieldset>
         
-                <button type="submit">Enviar Apuesta</button>
+                <button type="submit" onclick="submitForm()">Enviar Apuesta</button>
             </form>
         </section>
         <section id="historial">
@@ -144,7 +144,7 @@
     
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-        emailjs.init("Gmail"); // Reemplaza con tu ID de usuario
+        emailjs.init("Alfredo Preza"); // Reemplaza con tu ID de usuario
 
         function submitForm() {
             var nombre = document.getElementById('nombre').value;
